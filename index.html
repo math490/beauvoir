@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Simone de Beauvoir</title>
+    <link rel="shortcut icon" type="imagex/png" href="https://cdn-icons-png.flaticon.com/512/323/323315.png">
+    <style>
+        :root {
+            --bg-color: #1e1e2f;
+            --text-color: #ffffff;
+            --accent-color: #002654;
+            --secondary-color: #ffffff;
+            --highlight-color: #ed2939;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        strong {
+            color: var(--highlight-color);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--accent-color);
+            padding: 2% 5%;
+            text-align: center;
+            animation: slideDown 1s ease-out;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        main {
+            padding: 2%;
+            text-align: justify;
+        }
+
+        main h2 {
+            color: var(--highlight-color);
+            font-size: 2em;
+        }
+
+        main p, ul {
+            font-size: 1.5em;
+        }
+
+        main ul {
+            margin-left: 2em;
+        }
+
+        section {
+            margin-bottom: 2%;
+            margin-top: 2%;
+            animation: fadeIn 2s ease;
+        }
+
+        section img, .carousel img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 5% auto;
+            border-radius: 12px;
+        }
+
+        .carousel-container {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            gap: 2em;
+            will-change: transform;
+        }
+
+        .carousel img {
+            width: 15%;
+            height: auto;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .carousel img.selected {
+            transform: scale(1.1);
+            box-shadow: 0 0 1em var(--secondary-color);
+        }
+
+        .carousel-controls {
+            text-align: center;
+            margin-top: 20px;
+            display: none; /* Oculta o botão por padrão */
+        }
+
+        .carousel-controls button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            border: none;
+            border-radius: 5px;
+            margin: 0 10px;
+        }
+
+        .carousel-controls button:hover {
+            background-color: var(--highlight-color);
+        }
+
+        footer {
+            background: var(--highlight-color);
+            text-align: center;
+            padding: 2%;    
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.5em; }
+            main { padding: 5% 5%; }
+            main p, ul {
+                font-size: 1em;
+            }
+            .carousel img { width: 30%; }
+            .carousel img.selected {
+            transform: scale(1.1);
+            box-shadow: 0 0 1em var(--secondary-color);
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Simone de Beauvoir: Vida e Legado</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Origem e Local de Vida</h2>
+            <p>Simone de Beauvoir nasceu em 9 de janeiro de 1908, em Paris, França. Vinda de uma família burguesa, foi criada em um ambiente conservador e religioso. No entanto, desde cedo demonstrou uma mente questionadora e interessada por filosofia e literatura. A cidade de Paris foi o cenário principal de sua formação e produção intelectual. Lá frequentou cafés, universidades e salões literários, onde travou contato com pensadores de destaque.</p>
+            <img src="https://theurbanearth.wordpress.com/wp-content/uploads/2009/05/vista-paris-tour-eiffel.jpg?w=640" alt="Vista de Paris" id="original-img-0">
+        </section>
+
+        <section>
+            <h2>Trajetória</h2>
+            <p>Beauvoir estudou na Sorbonne, onde se formou em filosofia em 1929. Nesse mesmo ano, conheceu Jean-Paul Sartre, com quem desenvolveu uma relação pessoal e filosófica por toda a vida. Juntos, foram os principais nomes do existencialismo francês. Beauvoir lecionou em diversas instituições e publicou romances, ensaios e memórias, sempre comprometida com a luta pela liberdade, igualdade e justiça social.</p>
+            <p>Foi também uma das primeiras mulheres a obter êxito acadêmico num campo predominantemente masculino, abrindo caminhos para futuras gerações de filósofas.</p>
+            <img src="https://cdn.record.com.br/wp-content/uploads/2019/06/25163820/Simone-de-Beauvoir.jpg" alt="Simone de Beauvoir" id="original-img-1">
+        </section>
+
+        <section>
+            <h2>Filosofia e Pensamento</h2>
+            <p>Simone de Beauvoir é reconhecida por sua contribuição ao existencialismo e à teoria feminista. Em sua filosofia, defende que o ser humano é livre e responsável por construir sua própria existência. O conceito de "mulher como o Outro", que desenvolve em "O Segundo Sexo", é uma crítica à forma como a sociedade historicamente define as mulheres em função dos homens.</p>
+        </section>
+
+        <section>
+            <h2>Obras</h2>
+            <p>Entre suas principais obras estão:</p>
+            <ul>
+                <li><strong>O Segundo Sexo (1949):</strong> Obra fundamental do feminismo, analisa a opressão das mulheres ao longo da história.</li>
+                <li><strong>Memórias de uma Moça Bem-Comportada (1958):</strong> Relato autobiográfico sobre sua juventude e educação.</li>
+                <li><strong>Os Mandarins (1954):</strong> Romance vencedor do Prêmio Goncourt, retrata a vida intelectual no pós-guerra.</li>
+                <li><strong>A Força das Coisas (1963):</strong> Terceiro volume de suas memórias, com reflexões filosóficas e políticas.</li>
+            </ul>
+            <div class="carousel-container">
+                <div class="carousel" id="carousel">
+                    <img src="https://m.media-amazon.com/images/I/71YzNRN03YL._AC_UF1000,1000_QL80_.jpg" alt="O Segundo Sexo" id="original-carousel-img-0">
+                    <img src="https://m.media-amazon.com/images/I/616xcVvsq3L._AC_UF1000,1000_QL80_.jpg" alt="Memórias de uma Moça Bem-Comportada" id="original-carousel-img-1">
+                    <img src="https://m.media-amazon.com/images/I/91eSH35G3CL._AC_UF1000,1000_QL80_.jpg" alt="Os Mandarins" id="original-carousel-img-2">
+                    <img src="https://m.media-amazon.com/images/I/91R01EYnSjL._UF894,1000_QL80_.jpg" alt="A Força das Coisas" id="original-carousel-img-3">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Importância Atual e Relação com a Informática</h2>
+            <p>A filosofia de Simone de Beauvoir influenciou não apenas o feminismo, mas também os estudos culturais, sociais e tecnológicos. No contexto da informática, sua visão crítica sobre a construção social dos papéis de gênero pode ser aplicada à análise de algoritmos e à representatividade das mulheres na tecnologia.</p>
+            <p>Por exemplo, o desenvolvimento de sistemas inteligentes (como IA) deve considerar vieses de gênero, algo que sua filosofia ajuda a identificar. Também inspira projetos educacionais e plataformas digitais voltadas ao empoderamento feminino e à equidade de gênero no mercado de trabalho da tecnologia.</p>
+        </section>
+    </main>
+
+    <div class="carousel-controls" id="carousel-controls">
+        <button id="go-to-start">Voltar ao Início</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 - Página dedicada a Simone de Beauvoir</p>
+    </footer>
+
+    <script>
+        const carousel = document.getElementById('carousel');
+        let images = carousel.querySelectorAll('img');
+        let index = 0;
+        let autoScroll = true;
+        const duplicationFactor = 15;
+        const scrollSpeed = 1000;
+        const carouselControls = document.getElementById('carousel-controls');
+        const goToStartButton = document.getElementById('go-to-start');
+        let originalImageCount = images.length;
+        let scrollInterval;
+        let interactionDetected = false;
+        let interactionTimeout;
+        const inactivityTimeout = 5000; // Tempo de inatividade antes de voltar ao início (em ms)
+
+        function duplicateImages() {
+            const originalImages = Array.from(carousel.querySelectorAll('img'));
+            for (let i = 0; i < duplicationFactor; i++) {
+                originalImages.forEach(img => {
+                    const clone = img.cloneNode(true);
+                    carousel.appendChild(clone);
+                });
+            }
+            images = carousel.querySelectorAll('img');
+        }
+
+        function resetInactivityTimer() {
+            clearTimeout(interactionTimeout);
+            interactionDetected = true;
+            interactionTimeout = setTimeout(() => {
+                interactionDetected = false;
+            }, inactivityTimeout);
+        }
+
+        function updateCarousel() {
+            const firstImageWidth = images[0].offsetWidth + 16;
+            carousel.style.transform = `translateX(-${index * firstImageWidth}px)`;
+
+            const lastImageIndex = images.length - 1;
+            const renderedLastImage = index === lastImageIndex;
+
+            if (renderedLastImage && autoScroll && !interactionDetected) {
+                autoScroll = false;
+                clearInterval(scrollInterval);
+                setTimeout(() => {
+                    index = 0;
+                    autoScroll = true;
+                    updateCarousel();
+                    startAutoScroll();
+                }, 2000); // Tempo antes de voltar ao início (em ms)
+            } else if (index >= images.length) {
+                index = 0;
+            }
+        }
+
+        function startAutoScroll() {
+            clearInterval(scrollInterval);
+            scrollInterval = setInterval(() => {
+                if (autoScroll) {
+                    index++;
+                    updateCarousel();
+                }
+            }, scrollSpeed);
+        }
+
+        function startCarousel() {
+            duplicateImages();
+            startAutoScroll();
+
+            carousel.addEventListener('click', handleImageClick);
+            carousel.addEventListener('mousemove', resetInactivityTimer);
+            carousel.addEventListener('mousedown', resetInactivityTimer);
+            carousel.addEventListener('touchstart', resetInactivityTimer);
+            carousel.addEventListener('keydown', resetInactivityTimer);
+        }
+
+        function stopCarouselTemp() {
+            autoScroll = false;
+            clearInterval(scrollInterval);
+            setTimeout(() => {
+                autoScroll = true;
+                startAutoScroll();
+            }, 4000);
+        }
+
+        function handleImageClick(event) {
+            const target = event.target;
+            if (target.tagName === 'IMG') {
+                stopCarouselTemp();
+                selectImage(Array.from(images).indexOf(target));
+                resetInactivityTimer();
+            }
+        }
+
+        function selectImage(i) {
+            images.forEach(img => img.classList.remove('selected'));
+            if (images[i]) {
+                images[i].classList.add('selected');
+            }
+        }
+
+        goToStartButton.addEventListener('click', () => {
+            autoScroll = true;
+            carouselControls.style.display = 'none';
+            index = 0;
+            carousel.style.transition = 'transform 0.5s ease-in-out';
+            updateCarousel();
+            carousel.offsetHeight;
+            carousel.style.transition = 'transform 0.5s ease-in-out';
+            startAutoScroll();
+            resetInactivityTimer();
+        });
+
+        window.addEventListener('load', () => {
+            startCarousel();
+            window.addEventListener('resize', updateCarousel);
+            updateCarousel();
+            resetInactivityTimer();
+        });
+    </script>
+</body>
+</html>
